@@ -1,0 +1,25 @@
+{
+  "name": "dicam-lang",
+  "displayName": "Dicam Lang",
+  "description": "Syntax highlichting for Dicam-files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "dicam",
+      "aliases": ["Dicam", "dicam"],
+      "extensions": [".dicam"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "dicam",
+      "scopeName": "source.dicam",
+      "path": "./syntaxes/dicam.tmLanguage.json"
+    }]
+  }
+}
